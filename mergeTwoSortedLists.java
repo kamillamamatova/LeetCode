@@ -15,7 +15,7 @@ class Solution {
         ListNode cur1 = list1;
         ListNode cur2 = list2;
 
-        // While both loops aren't empty
+        // While both linked lists aren't empty
         while(cur1 != null && cur2 != null){
 
             if(cur1.val <= cur2.val){
