@@ -16,7 +16,7 @@ public class Solution {
 
         // If either are null, then there's no cycle,
         // since these are the nodes being checked
-        while(quick.next != null && quick.next.next != null){
+        while(quick != null && quick.next != null){
             quick = ahead.next.next;
             slow = behind.next;
 
