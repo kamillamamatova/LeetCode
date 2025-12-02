@@ -17,14 +17,14 @@ public class Solution {
         while(head != null){
             visited.add(head);
 
-            // If the next node is already in the hashset,
-            // then it's a cycle
-            if(visited.contains(head.next)){
-                return true;
-            }
-
             // Next node
             head = head.next;
+
+            // If the next node is already in the hashset,
+            // then it's a cycle
+            if(visited.contains(head)){
+                return true;
+            }
         }
 
         return false;
