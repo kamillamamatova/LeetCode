@@ -5,12 +5,11 @@ class Solution {
         
         // amanaplanacanalpanoma
         s = s.replaceAll("[^a-zA-Z0-9]", "");
-
-        StringBuilder newS = new StringBuilder(s);
+        
         StringBuilder reverseS = new StringBuilder(s);
         reverseS.reverse();
 
-        if(newS.toString().equals(reverseS.toString())){
+        if(s.equals(reverseS.toString())){
             return true;
         }
 
