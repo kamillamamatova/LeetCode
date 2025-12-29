@@ -11,7 +11,7 @@ class Solution {
         // 8 - 5 = 3
         // leet
         // 0123
-        for(int i = 0; i <= haystack.length() - needle.length() - 1; i++){
+        for(int i = 0; i <= haystack.length() - needle.length(); i++){
             if(haystack.substring(i, i + needle.length()).equals(needle)){
                 return i;
             }
