@@ -26,10 +26,12 @@ class Solution {
         while(i < ransomNote.length()){
             if(magazineMap.containsKey(ransomNoteChar[i])){
                 int count = magazineMap.get(ransomNoteChar[i]);
-                magazineMap.put(ransomNoteChar[i], count - 1);
                 if(count <= 0){
                     return false;
                 }
+                
+                magazineMap.put(ransomNoteChar[i], count - 1);
+                
                 i++;
             }
             else{
