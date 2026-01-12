@@ -24,6 +24,9 @@ class Solution {
         /*
         - Given: String address
         - Goal: Replace every . with [.]
+
+        THere's a replace function that is more effecient and will make
+        this solution 1 line
         */
     }
 }
