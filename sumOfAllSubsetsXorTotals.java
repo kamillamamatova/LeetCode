@@ -16,13 +16,13 @@ class Solution {
         */
     }
 
-    public int dfs(nums, int i, int currXor){
+    public int dfs(int[] nums, int i, int currXor){
         // One subset is finished
         if(i == nums.length){
             return currXor;
         }
 
-        int skip = dfs(nums, i + 1, currXor)
+        int skip = dfs(nums, i + 1, currXor);
 
         int take = dfs(nums, i + 1, currXor ^ nums[i]);
 
